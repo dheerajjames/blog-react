@@ -1,3 +1,7 @@
+# Blog
+React application for football teams and related football teams
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

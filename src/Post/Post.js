@@ -6,8 +6,8 @@ import styled from 'styled-components';
 import styles from './Post.module.css';
 
 
-// const postsData = require("./_posts.json");
-const url = "http://localhost:4000/blogs";
+// const url = "http://localhost:4000/blogs";
+const url = "https://blog-backend-1.herokuapp.com/blogs";
 
 
 const Image = styled.img`
@@ -33,10 +33,10 @@ export default function Post() {
 
   return (
     <div className={styles.container}>
-      <div>
-      <h1 className="title">{blog.blogTitle}</h1>
+      <div className={styles.mainContent}>
+      <h1 className={styles.title}>{blog.blogTitle}</h1>
       {/* <hr /> */}
-      <Image src={blog.blogImage}></Image>
+      <Image src={blog.blogImage} className={styles.image}></Image>
       <p>{blog.blogContent}</p>
       </div>
       <div className={styles.aside}>

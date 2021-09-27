@@ -3,8 +3,8 @@ import {useEffect, useState} from 'react';
 import styles from './Blog.module.css';
 
 
-// const postsData = require("./_posts.json");
-const url = "http://localhost:4000/blogs";
+// const url = "http://localhost:4000/blogs";
+const url = "https://blog-backend-1.herokuapp.com/blogs";
 
 
 export default function Blog() {

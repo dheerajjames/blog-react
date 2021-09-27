@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import styles from './Footer.module.css';
 // import logo from "./Sblogo.png";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons';
@@ -20,16 +21,16 @@ const Image = styled.img`
 
 function Footer(props){
 //    let color= props.primary;
-    const FooterDiv = styled.div`
-    width: 100%;
-    padding-top: 3em;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-`;
+//     const FooterDiv = styled.div`
+//     width: 100%;
+//     padding-top: 3em;
+//     position: absolute;
+//     bottom: 0;
+//     display: flex;
+//     justify-content: space-between;
+// `;
     return(
-        <FooterDiv>
+        <div className={styles.footer}>
         <Image src="https://dheerajjames.github.io/images/logo.png" alt="logo"></Image> 
             {props.data}
        
@@ -38,7 +39,7 @@ function Footer(props){
             <FaInstagram />
             <FaGithub />
         </FooterLinks>
-        </FooterDiv>
+        </div>
     )
 }
 

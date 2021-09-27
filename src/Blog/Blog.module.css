@@ -47,3 +47,24 @@
       background: white;
       box-shadow: 0 1px 7px rgba(0,0,0,0.5);
     }
+
+    @media(max-width: 575.98px){
+      .blogcard{
+        width: 200px;
+        font-size: 0.5rem;
+        margin-left: 0px;
+      }
+      .blogthumbnail{
+        width: 150px;
+        height: 150px;
+      }
+      .blogdetails{
+        padding:2px;
+        width: 150px;
+        height: 150px;
+      }
+      .blogdetails h1{
+        font-size:1rem;
+      }
+      
+    }
