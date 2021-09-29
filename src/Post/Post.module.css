@@ -5,21 +5,29 @@
     justify-content: center;
     width: 50%;
 }
+.mainPost{
+    font-family: 'PT Serif', serif;
+    font-size: 1.5rem;
+}
 .aside{
     width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: flex-end;
-    padding-left: 200px;
+    padding-left: 180px;
 }
 .asideItem{
     display: flex;
     justify-content: center;
     align-content: center;
     width: 100%;
+    padding: 10px;
     box-shadow: 0 1px 7px rgba(0,0,0,0.5);
-
+    border-radius: 15px 30px 15px
+}
+.asideItem:hover{
+    background-color: burlywood;
 }
 
 @media (max-width: 769px){

@@ -23,26 +23,23 @@ export default function Post() {
       fetch(`${url}/${blogId}`).then((response) => {
           return response.json()
        }).then((data) => {
-          //  console.log(data.data)
            setBlog(data.data)
        }).catch(error => {
            console.log(error);
        })
   },[blogId])
-  // console.log(blog.relatedLinks);
 
   return (
     <div className={styles.container}>
       <div className={styles.mainContent}>
       <h1 className={styles.title}>{blog.blogTitle}</h1>
-      {/* <hr /> */}
       <Image src={blog.blogImage} className={styles.image}></Image>
-      <p>{blog.blogContent}</p>
+      <p className={styles.mainPost}>{blog.blogContent}</p>
       </div>
       <div className={styles.aside}>
         {blog.relatedLinks?
         blog.relatedLinks.map((item)=>(
-        <div key={item.blogId} className={styles.asideItem}>
+          <div key={item.blogId} className={styles.asideItem}>
         <Link to={"/post/" + item.relatedBlogId} > <p>{item.relatedBlogTitles}</p></Link>
         <br></br>
         </div>
