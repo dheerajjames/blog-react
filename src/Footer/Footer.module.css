@@ -1,15 +1,17 @@
 .footer{
     width: 100%;
-    padding-top: 3em;
+    padding-top: 0.1em;
     position: relative;
     bottom: 0;
     display: flex;
     justify-content: space-between;
+    background-color:black !important;
+    color: white ;
 }
 
-@media(max-width: 575.98px){
+@media(max-width: 768px){
     .footer{
-        bottom:1px;
-        position: relative;
+        bottom:0;
+        position: fixed;
     }
 }

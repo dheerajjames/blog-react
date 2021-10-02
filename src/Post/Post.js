@@ -10,9 +10,7 @@ import styles from './Post.module.css';
 const url = "https://blog-backend-1.herokuapp.com/blogs";
 
 
-const Image = styled.img`
-  width: 500px;
-`;
+
 
 export default function Post() {
   
@@ -33,14 +31,15 @@ export default function Post() {
     <div className={styles.container}>
       <div className={styles.mainContent}>
       <h1 className={styles.title}>{blog.blogTitle}</h1>
-      <Image src={blog.blogImage} className={styles.image}></Image>
+      <img src={blog.blogImage} className={styles.image}></img>
       <p className={styles.mainPost}>{blog.blogContent}</p>
       </div>
       <div className={styles.aside}>
+        <h3>Related Teams</h3>
         {blog.relatedLinks?
         blog.relatedLinks.map((item)=>(
           <div key={item.blogId} className={styles.asideItem}>
-        <Link to={"/post/" + item.relatedBlogId} > <p>{item.relatedBlogTitles}</p></Link>
+        <Link to={"/post/" + item.relatedBlogId} > <li>{item.relatedBlogTitles}</li></Link>
         <br></br>
         </div>
         ))

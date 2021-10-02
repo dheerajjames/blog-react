@@ -3,6 +3,9 @@
 }
 body {
     margin: 0;
+    background-color: cornsilk;
+    background-image: url("./black.jpg");
+    background-size: cover;
   }
   .App {
     font-family: sans-serif;
@@ -14,7 +17,8 @@ body {
   }
   
   header {
-    background-color: #fafafa;
+    background-color: black;
+    color:white;
     height: 60px;
   }
   header .nav-item {
@@ -23,6 +27,7 @@ body {
     height: 100%;
     display: inline-flex;
     align-items: center;
+    color:white;
   }
   header .nav-item.active {
     background: #000;
@@ -37,10 +42,13 @@ body {
   
   .post-content-view,
   .blog {
-    padding: 40px;
-    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly ;
+    width: 100%;
     max-width: 100%;
-    margin: auto;
+    height: 180vh;
+    padding-bottom: 100px;
   }
   
   .post-listing {
@@ -49,4 +57,17 @@ body {
     margin: 20px;
     padding: 15px;
   }
-  
+  @media(max-width: 769px){
+    .blog{
+      margin-bottom: 10%;
+      height:300vh;
+      padding-bottom: 20px;
+    }
+  }
+  @media(max-width: 575.98px){
+    .blog{
+      margin-bottom: 10%;
+      height:300vh;
+      padding-bottom: 20px;
+    }
+  }

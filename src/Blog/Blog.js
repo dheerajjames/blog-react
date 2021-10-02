@@ -39,6 +39,6 @@ export default function Blog() {
       );
     });
   
-    return <div className="blog">{posts}</div>;
+    return (<div><h1>Welcome to Titans Blog</h1><div className="blog">{posts}</div></div>);
   }
   
